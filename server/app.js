@@ -20,6 +20,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/sms-kisan/index.html'));
 });
 
-http.listen(3000, function () {
-    console.log('listening on :3000');
+http.listen(process.env.PORT || 3000, function () {
+    console.log('listening', app.settings.env);
 });
