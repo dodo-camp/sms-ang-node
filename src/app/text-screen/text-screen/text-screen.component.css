@@ -1,0 +1,12 @@
+.container {
+    margin-top: 10em;
+}
+
+.msg-btn {
+    position: absolute;
+    right: 0;
+}
+
+.full-width {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card>
+    <mat-card-content>
+      <mat-grid-list cols="1" rowHeight="200px">
+        <mat-grid-tile>
+          <mat-form-field class="full-width">
+            <form [formGroup]="group">
+              <textarea formControlName="text" matInput placeholder="Text Message"></textarea>
+            </form>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-content>
+    <button mat-fab color="warn" class="msg-btn" [disabled]="!group.valid" (click)="sendMessage()">
+      <mat-icon>message</mat-icon>
+    </button>
+  </mat-card>
+</div>

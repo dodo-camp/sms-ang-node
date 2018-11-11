@@ -1,0 +1,44 @@
+.middle {
+    vertical-align: middle;
+}
+
+.contact-card {
+    max-width: 400px;
+}
+
+.d-grig {
+    display: inline-grid;
+}
+
+.mat-nav-list .mat-list-item {
+    padding-bottom: 5em;
+}
+
+.container {
+    margin-top: 8em;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 500px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 500px;
+    }
+}
+
+

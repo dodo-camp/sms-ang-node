@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card class="contact-card">
+    <mat-card-title>
+      Messages
+    </mat-card-title>
+    <mat-card-content>
+      <mat-nav-list [@listStagger]='listDropAnimation'>
+        <mat-list-item *ngFor="let msg of messages;trackBy: trackByFn">
+          <span class="d-grig">
+            <small>To: {{ msg.to }}</small>
+            <small>Date: {{msg.date}}</small>
+          </span>
+          <p style="padding-top: 1em">{{msg.text}}</p>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-card-content>
+  </mat-card>
+</div>
