@@ -46,6 +46,7 @@ router.post('/sendMessage', (req, res) => {
         (err, responseData) => {
             if (err) {
                 console.log(err);
+                res.json({ "success": true });
             } else {
                 let obj = {
                     "to": name,
