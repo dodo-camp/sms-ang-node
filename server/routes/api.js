@@ -41,8 +41,9 @@ router.post('/sendMessage', (req, res) => {
     let { text, code } = req.body;
     let reciever = getContacts().contacts.find(contact => contact.code == code);
     let { name, number } = reciever;
+    let realNumber = '91' + number;
     nexmo.message.sendSms(
-        "Nexmo", number, text,
+        "Nexmo", realNumber, text,
         (err, responseData) => {
             if (err) {
                 console.log(err);

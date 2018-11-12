@@ -1,0 +1,33 @@
+docs:-
+
+There are 4 modules which are being lazy loaded into the application.
+
+First module is contacts module, which is responsible for showing the list of contacts the user has
+, the list is fetched from the server.
+
+Second module is contact info module, it loaded when a contact is selected by pressing the messege button in contact module. It shows the information of the contact like name and number.
+
+Third module is the screen where the text is being written.And after send button the server sends the messsage to the registered number.
+
+Fourth module is the messages module, it responsible for showing the list of messages which the user has sent to variouse contacts.
+
+Server side: :- node js, express is used.
+	       for messaging Nexom is used. By default my number is registered (9811914938).
+
+client side :- Angular 6 
+
+
+to run the project on localhost
+
+inside the directory of the project.
+run npm intsall
+then ng build (to build the dist folder, by default it will be there so no need).
+then node ./server/app.js
+
+go to localhost:3000
+
+routes:- localhost:3000/contacts
+	 localhost:3000/messages
+	 localhost:3000/contact-info/code
+         localhost:3000/text/code
+
